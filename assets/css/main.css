@@ -828,14 +828,21 @@ section,
 --------------------------------------------------------------*/
 
 .hero {
-  background: url('assets/img/carousel-1.JPG') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  min-height: 60vh;
-  position: relative;
-  padding: 60px 0;
+  background-image: url('assets/img/carousel-1.JPG'); /* Ruta a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Ocupa el 100% de la altura del viewport */
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: white; /* Color del texto, ajusta según tu diseño */
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espaciado interno */
+}
+
+.hero-content {
+  max-width: 600px; /* Ajusta según el tamaño de tu contenido */
 }
 
 
