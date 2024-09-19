@@ -67,7 +67,7 @@
     // Espera 4 segundos (4000 ms) antes de remover el preloader
         setTimeout(() => {
           preloader.remove();
-      }, 4000); // 4000 ms = 4 segundos
+      }, 2000); // 4000 ms = 4 segundos
     });
   } 
 

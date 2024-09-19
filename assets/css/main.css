@@ -939,6 +939,26 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.video-container {
+  width: 100%; /* Ajusta según sea necesario */
+  height: 300px; /* Ajusta la altura deseada */
+  overflow: hidden; /* Oculta el contenido que está fuera del contenedor */
+  position: relative;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ajusta el video para cubrir el contenedor sin distorsión */
+}
+
+
+
+
 .about h3 {
   font-weight: 700;
   font-size: 28px;
