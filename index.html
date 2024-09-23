@@ -85,6 +85,11 @@
       font-size: 1.5em;
       color: #fff;
     }
+    @media (max-width: 768px) {
+      .mobile-hidden {
+          display: none;
+      }
+  }
   </style>
 
   <!-- =======================================================
@@ -98,10 +103,11 @@
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0 mobile-hidden">
         <img src="assets/img/logop.png" alt="">
-        <span>.</span>
-      </a>
+        <span></span>
+    </a>
+   
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
