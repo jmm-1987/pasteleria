@@ -1,68 +1,128 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pastelería Deliciosa</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      overflow: hidden;
-    }
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
 
-    .hero {
-      background-image: url('assets/img/carousel-1.JPG');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    .hero img {
-      max-width: 200px; /* Ajusta el tamaño del logo según tus necesidades */
-      position: absolute;
-      left: -250px; /* Empieza fuera de la pantalla */
-      animation: slideIn 1s forwards; /* Aplica la animación */
-    }
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Epilogue, "Noto Sans", sans-serif;'>
+      <div class="flex h-full grow flex-col">
+        <header class="flex items-center justify-between border-b border-solid border-b-[#f4f2f0] px-4 py-3 lg:px-10">
+          <div class="flex items-center gap-4 text-[#181411]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_535)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#181411] text-lg font-bold leading-tight tracking-[-0.015em]">Panadería</h2>
+          </div>
+          <div class="hidden md:flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#181411] text-sm font-medium" href="#">Inicio</a>
+              <a class="text-[#181411] text-sm font-medium" href="#">Galería</a>
+              <a class="text-[#181411] text-sm font-medium" href="#">Carta</a>
+              <a class="text-[#181411] text-sm font-medium" href="#">Contacto</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center rounded-xl h-10 px-4 bg-[#e67919] text-white text-sm font-bold"
+            >
+              <span class="truncate">Iniciar sesión</span>
+            </button>
+          </div>
+        </header>
 
-    @keyframes slideIn {
-      from {
-        left: -250px;
-      }
-      to {
-        left: 0;
-      }
-    }
+        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+          <div class="flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="p-2 md:p-4">
+                <div class="relative flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-4">
+                  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+                    <source src="assets/img/propias/v.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                  </video>
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-black leading-tight">Bakery</h1>
+                    <h2 class="text-white text-base md:text-lg">Freshly baked bread, cookies, pastries, and more</h2>
+                  </div>
 
-    .hero h1 {
-      font-size: 3em;
-      margin: 0;
-      padding-top: 20px;
-      color: #fff;
-    }
+                  <label class="flex flex-col w-full max-w-[480px]">
+                    <div class="flex w-full rounded-xl h-14 md:h-16">
+                      <div class="flex items-center justify-center px-3 bg-white text-[#887463] border rounded-l-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        placeholder="Search for products"
+                        class="flex-1 h-full text-sm md:text-base border border-[#e5e0dc] focus:outline-none px-3"
+                      />
+                      <div class="flex items-center justify-center rounded-r-xl bg-white border border-[#e5e0dc]">
+                        <button class="h-full px-4 md:px-5 bg-[#e67919] text-white text-sm md:text-base font-bold">Search</button>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
 
-    .hero p {
-      font-size: 1.5em;
-      color: #fff;
-    }
-  </style>
-</head>
-<body>
+            <div class="flex flex-col gap-10 px-4 py-10">
+              <div class="flex flex-col gap-4 text-center lg:text-left">
+                <h1 class="text-[#181411] text-3xl md:text-4xl font-bold">Our Menu</h1>
+                <p class="text-[#181411] text-base max-w-[720px]">From freshly baked bread to sweet pastries, we have a wide selection of baked goods.</p>
+              </div>
+              <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="flex flex-col gap-3">
+                  <div class="w-full aspect-video bg-cover rounded-xl" style='background-image: url("https://cdn.usegalileo.ai/stability/c03e8d3d-8525-4f71-a710-44e5dad79bbb.png");'></div>
+                  <p class="text-[#181411] font-medium">Pastries</p>
+                  <p class="text-[#887463] text-sm">Delicious pastries made with the finest ingredients</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <div class="w-full aspect-video bg-cover rounded-xl" style='background-image: url("https://cdn.usegalileo.ai/stability/7888fcba-4be2-48cf-8200-0197190d4b90.png");'></div>
+                  <p class="text-[#181411] font-medium">Bread</p>
+                  <p class="text-[#887463] text-sm">Freshly baked bread that's perfect for any meal</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <div class="w-full aspect-video bg-cover rounded-xl" style='background-image: url("https://cdn.usegalileo.ai/stability/4fc19d29-8828-4076-9796-8abbd4ced27b.png");'></div>
+                  <p class="text-[#181411] font-medium">Cookies</p>
+                  <p class="text-[#887463] text-sm">A wide selection of cookies perfect for any occasion</p>
+                </div>
+              </div>
+            </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="assets/img/logop.png" alt="Logo Pastelería Deliciosa">
-    <div>
-      <h1>Pastelería Deliciosa</h1>
-      <p>Los mejores postres para tu ocasión especial</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+              <div class="flex flex-col gap-3">
+                <div class="w-full aspect-video bg-cover rounded-xl" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/2a217543-3aa1-456b-9bd7-c4f2df20beb0.png");'></div>
+                <p class="text-[#181411] font-medium">Fresh Baked Bread</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="w-full aspect-video bg-cover rounded-xl" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/c991752f-de9a-4e28-b814-b61f87047f83.png");'></div>
+                <p class="text-[#181411] font-medium">Delicious Pastries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-
-</body>
+  </body>
 </html>
