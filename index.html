@@ -122,26 +122,7 @@
     </div>
   </header>
 
-  <script>
-    // Detecta si el dispositivo es un móvil
-    function isMobile() {
-      return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    }
   
-    // Selecciona el elemento del video y la fuente
-    const video = document.getElementById("heroVideo");
-    const videoSource = document.getElementById("videoSource");
-  
-    // Asigna diferentes videos dependiendo del dispositivo
-    if (isMobile()) {
-      videoSource.src = "assets/img/propias/vmovil.mp4"; // Video para móviles
-    } else {
-      videoSource.src = "assets/img/propias/vv-desktop.mp4"; // Video para escritorio
-    }
-  
-    // Cargar el video seleccionado
-    video.load();
-  </script>
 
   <main class="main">
     <!-- Hero Section -->
@@ -157,7 +138,26 @@
       </div>
     </section>
     
+    <script>
+      // Detecta si el dispositivo es un móvil
+      function isMobile() {
+        return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      }
     
+      // Selecciona el elemento del video y la fuente
+      const video = document.getElementById("heroVideo");
+      const videoSource = document.getElementById("videoSource");
+    
+      // Asigna diferentes videos dependiendo del dispositivo
+      if (isMobile()) {
+        videoSource.src = "assets/img/propias/vmovil.mp4"; // Video para móviles
+      } else {
+        videoSource.src = "assets/img/propias/vv-desktop.mp4"; // Video para escritorio
+      }
+    
+      // Cargar el video seleccionado
+      video.load();
+    </script>
 
 
     <!-- About Section -->
@@ -619,10 +619,8 @@ Sólo con experiencia y compromiso se consigue un producto final realmente exqui
       </div>
 
     </section><!-- /Gallery Section -->
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contacto</h2>
