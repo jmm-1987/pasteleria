@@ -44,6 +44,18 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      animation: fadeInBackground 3s ease-in-out forwards;
+    }
+
+    @keyframes fadeInBackground {
+      0% {
+        background-color: white; /* Empieza desde blanco */
+        opacity: 0;
+      }
+      100% {
+        background-color: transparent;
+        opacity: 1; /* Imagen en su color original */
+      }
     }
 
     .hero img {
@@ -98,7 +110,6 @@
           <li><a href="#chefs">Chefs</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="ggg.html">otra</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -109,10 +120,13 @@
     <!-- Hero Section -->
 
   <section id="hero" class="hero">
-    
+    <video autoplay muted loop>
+      <source src="assets\img\propias\vv.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
     <div>
       <h1>Pastelería Tradicional</h1>
-      <p>elabroración artesana desde 1980</p>
+      <h1>El sabor del buen hacer</h1>
     </div>
   </section><!-- /Hero Section -->
 
@@ -128,23 +142,21 @@
             <img src="assets\img\propias\3.jpeg" class="img-fluid mb-4" alt="">
             <div class="book-a-table">
               <h3>Haz tu encargo</h3>
-              <p>924303030</p>
+              <p>924 30 35 08</p>
             </div>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+               
               </p>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Obrador propio con maquinaria artesanal</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Cafetería en local para tus desayunos y meriendas</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Gran variedad de tartas, pasteles y panes</span></li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+               
               </p>
               <div class="video-container">
               <div class="position-relative mt-4">
@@ -169,13 +181,13 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Why Choose Yummy</h3>
+              <h3>Por qué Marquesa de Pinares</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                Nuestro compromiso con la calidad del producto y el buen hacer de nuestro equipo nos hacen únicos.
+Sólo con experiencia y compromiso se consigue un producto final realmente exquisito 
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="#" class="more-btn"><span></span> <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div><!-- End Why Box -->
@@ -185,25 +197,25 @@
 
               <div class="col-xl-4">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <i class="bi bi-cake2"></i>
+                  <h4>Pasteles y bollería</h4>
+                  <p>Para llevar o para tomar en cafetería </p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore lore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4>Tartas</h4>
+                  <p>Tartas personalizadas en tamaño, diseño y sabores</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <h4>Panadería </h4>
+                  <p>Pan de centeno, baguettes... Todo elaborado en el día </p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -264,8 +276,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Menu</h2>
-        <p><span>Check Our</span> <span class="description-title">Yummy Menu</span></p>
+        <h2>Carta</h2>
+        <p><span>Consulta</span> <span class="description-title">Nuestros productos</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -274,25 +286,25 @@
 
           <li class="nav-item">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>Starters</h4>
+              <h4>Pasteles</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>Breakfast</h4>
+              <h4>Bollería</h4>
             </a><!-- End tab nav item -->
 
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-              <h4>Lunch</h4>
+              <h4>Tartas</h4>
             </a>
           </li><!-- End tab nav item -->
 
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-              <h4>Dinner</h4>
+              <h4>Panes</h4>
             </a>
           </li><!-- End tab nav item -->
 
@@ -304,7 +316,7 @@
 
             <div class="tab-header text-center">
               <p>Menu</p>
-              <h3>Starters</h3>
+              <h3>Panes</h3>
             </div>
 
             <div class="row gy-5">
@@ -624,8 +636,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>chefs</h2>
-        <p><span>Our</span> <span class="description-title">Proffesional Chefs<br></span></p>
+        <h2>Equipo</h2>
+        <p><span>Nuestros</span> <span class="description-title">Pasteleros<br></span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -795,14 +807,13 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/propias/2.jpeg"><img src="assets/img/propias/2.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/propias/3.jpeg"><img src="assets/img/propias/3.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/propias/4.jpeg"><img src="assets/img/propias/4.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/propias/5.jpeg"><img src="assets/img/propias/5.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/propias/6.jpeg"><img src="assets/img/propias/6.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/propias/7.jpeg"><img src="assets/img/propias/7.jpeg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/propias/8.jpg"><img src="assets/img/propias/8.jpg" class="img-fluid" alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -816,14 +827,14 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p><span>Need Help?</span> <span class="description-title">Contact Us</span></p>
+        <h2>Contacto</h2>
+        <p><span>Donde</span> <span class="description-title">estamos</span></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="mb-5">
-          <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5270.427321052611!2d-6.349314206909112!3d38.921608941538345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1426eabe406e5b%3A0x4dd2d3ce4d35be77!2sPasteler%C3%ADa%20Marquesa%20de%20Pinares!5e1!3m2!1ses!2ses!4v1726828934339!5m2!1ses!2ses" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -832,8 +843,8 @@
             <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="icon bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Dirección</h3>
+                <p>Calle Marquesa de Pinares,24 - 06800 Mérida (Badajoz)</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -842,8 +853,8 @@
             <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="icon bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Teléfono</h3>
+                <p>924 30 35 08</p>
               </div>
             </div>
           </div><!-- End Info Item -->

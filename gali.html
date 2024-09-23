@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="font-sans bg-[#fcfaf8]">
+    <div class="relative min-h-screen flex flex-col overflow-x-hidden">
+      <div class="flex flex-col h-full">
+        <!-- Header -->
+        <header class="flex items-center justify-between border-b border-[#f4ede7] px-6 py-4 lg:px-10 lg:py-6">
+          <div class="flex items-center gap-4">
+            <div class="w-8 h-8">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-[#1c140d] text-lg font-bold leading-tight">Bakery</h2>
+          </div>
+          <div class="hidden lg:flex items-center gap-6">
+            <a class="text-[#1c140d] text-sm font-medium" href="#">Home</a>
+            <a class="text-[#1c140d] text-sm font-medium" href="#">Menu</a>
+            <a class="text-[#1c140d] text-sm font-medium" href="#">Custom Orders</a>
+            <a class="text-[#1c140d] text-sm font-medium" href="#">About Us</a>
+          </div>
+          <!-- Menú hamburguesa para móviles -->
+          <button class="lg:hidden text-[#1c140d]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </header>
+
+        <!-- Main Content -->
+        <div class="px-4 lg:px-40 py-5 flex justify-center">
+          <div class="flex flex-col w-full max-w-[960px]">
+            <!-- Banner Video -->
+            <div class="relative w-full min-h-[320px] lg:min-h-[480px] flex flex-col items-center justify-center overflow-hidden rounded-lg">
+              <video
+                controls
+                autoplay
+                loop
+                muted
+                playsinline
+                class="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src="assets/img/propias/vv.mp4" type="video/mp4" />
+                Tu navegador no soporta la reproducción de video.
+              </video>
+              <div class="relative z-10 flex flex-col items-center gap-4 text-center text-white p-4">
+                <h1 class="text-3xl lg:text-5xl font-black"></h1>
+                <h2 class="text-base lg:text-lg"></h2>
+                <button class="mt-4 px-6 py-2 bg-[#f2800d] text-[#1c140d] rounded-full text-sm lg:text-base font-bold"></button>
+              </div>
+            </div>
+
+            <!-- Featured Products -->
+            <h2 class="text-[#1c140d] text-xl lg:text-2xl font-bold py-5">Featured Products</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <!-- Product Cards -->
+              <div class="flex flex-col gap-2">
+                <div class="bg-center bg-no-repeat bg-cover aspect-w-16 aspect-h-9 rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/stability/6e0c899f-f648-413a-8f8a-03d3ab18d657.png');"></div>
+                <p class="text-[#1c140d] text-sm lg:text-base font-medium">Sourdough</p>
+                <p class="text-[#9c7349] text-sm">$8.00</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="bg-center bg-no-repeat bg-cover aspect-w-16 aspect-h-9 rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/stability/379649bb-2260-4380-902f-e50a8b709050.png');"></div>
+                <p class="text-[#1c140d] text-sm lg:text-base font-medium">Croissants</p>
+                <p class="text-[#9c7349] text-sm">$4.50</p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="bg-center bg-no-repeat bg-cover aspect-w-16 aspect-h-9 rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/bf55e59b-5c91-43dc-893b-eaac9bb0af25.png');"></div>
+                <p class="text-[#1c140d] text-sm lg:text-base font-medium">Baguettes</p>
+                <p class="text-[#9c7349] text-sm">$5.00</p>
+              </div>
+            </div>
+
+            <!-- Our Story -->
+            <h2 class="text-[#1c140d] text-xl lg:text-2xl font-bold py-5">Our Story</h2>
+            <p class="text-[#1c140d] text-sm lg:text-base leading-normal">
+              Founded in 2018, our bakery is a family-owned and operated business. We take pride in creating delicious, high-quality breads and pastries that are made from scratch
+              every day. Our commitment to using only the finest ingredients and traditional techniques has earned us a loyal following of customers who appreciate the difference
+              that comes from our dedication to quality.
+            </p>
+
+            <!-- Gallery -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 py-4">
+              <!-- Gallery Items -->
+              <div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/ef13bafd-4e91-4a2a-a6db-dcb782e541d0.png');"></div>
+              <div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/d111977d-cceb-42a0-8add-8cd667c00044.png');"></div>
+              <div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/stability/1956899d-5cb1-4364-9e86-1bae3df80afb.png');"></div>
+              <div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/d753b1c3-ddfb-470d-97cb-8781fd35016b.png');"></div>
+              <div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/5bd4ed7d-dcfb-411c-8699-4fc65c8c52ff.png');"></div>
+              <div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/60c5d34c-3b42-4d20-bc97-fd28b1472f06.png');"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
