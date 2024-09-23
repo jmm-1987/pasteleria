@@ -61,15 +61,16 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
+  /*const preloader = document.querySelector('#preloader');
     if (preloader) {
       window.addEventListener('load', () => {
     // Espera 4 segundos (4000 ms) antes de remover el preloader
         setTimeout(() => {
           preloader.remove();
-      }, 2000); // 4000 ms = 4 segundos
+      }, 0000); // 4000 ms = 4 segundos
     });
-  } 
+  }
+  */
 
   /**
    * Scroll top button

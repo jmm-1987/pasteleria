@@ -949,7 +949,7 @@ section,
 --------------------------------------------------------------*/
 .video-container {
   width: 100%; /* Ajusta según sea necesario */
-  height: 300px; /* Ajusta la altura deseada */
+  height: 700px; /* Ajusta la altura deseada */
   overflow: hidden; /* Oculta el contenido que está fuera del contenedor */
   position: relative;
 }
