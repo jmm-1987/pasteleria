@@ -107,7 +107,25 @@
         <img src="assets/img/logop.png" alt="">
         <span></span>
     </a>
-   
+    <script>
+    const isAppleDevice = /iPhone|iPad|iPod/.test(navigator.userAgent);
+const isAndroidDevice = /Android/.test(navigator.userAgent);
+
+// Selecciona el logo
+const logo = document.querySelector('.mobile-hidden');
+
+if (isAppleDevice) {
+    // Ocultar logo para dispositivos Apple
+    if (logo) {
+        logo.style.display = 'none';
+    }
+} else if (isAndroidDevice) {
+    // Ocultar logo o hacer ajustes específicos para Android
+    if (logo) {
+        logo.style.display = 'none';
+    }
+}
+</script>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
