@@ -1120,6 +1120,13 @@ section,
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: Sombra para darle un efecto de profundidad */
 }
 
+@media (max-width: 768px) {
+  .rounded-container {
+    border-radius: 15px; /* Mantén el borde redondeado también en pantallas móviles */
+    padding: 10px; /* Opcional: Ajustar padding para pantallas más pequeñas */
+  }
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
