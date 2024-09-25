@@ -964,6 +964,16 @@ section,
   object-fit: cover; /* Ajusta el video para cubrir el contenedor sin distorsión */
 }
 
+.rounded-image {
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor circular */
+  width: 100%; /* Asegúrate de que la imagen sea responsiva */
+  height: auto;
+}
+
+.redondeada-image {
+  border-radius: 15px; /* Cambia este valor para ajustar qué tan redondeados quieres los bordes */
+}
 
 
 
@@ -1101,6 +1111,13 @@ section,
 .why-us .icon-box:hover i {
   color: var(--contrast-color);
   background: var(--accent-color);
+}
+
+.rounded-container {
+  border-radius: 15px; /* Ajusta este valor para redondear más o menos los bordes */
+  border: 1px solid #ddd; /* Agrega un borde si lo deseas */
+  padding: 15px; /* Opcional: Espaciado interno para mejorar la estética */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: Sombra para darle un efecto de profundidad */
 }
 
 /*--------------------------------------------------------------
